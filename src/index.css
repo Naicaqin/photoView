@@ -1,0 +1,42 @@
+.section {
+  margin-bottom: 24px;
+  background-color: #fbfbfb;
+  border: 1px solid #f1f1f1;
+}
+.previewSection {
+  padding: 40px 30px 0;
+  position: relative;
+}
+.previewImg {
+  width: 100%;
+  margin-bottom: 30px;
+  box-shadow: 0 0 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.04), 0 6px 28px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+  height: auto;
+}
+
+.previewPhoto {
+  max-width: calc(100vw - 248px);
+  max-height: calc(100vh - 188px);
+}
+
+.photoSliderStyle .mask {
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+.PhotoView__PhotoBox {
+  width: fit-content !important;
+  height: fit-content !important;
+}
+.PhotoView-PhotoSlider__ArrowLeft {
+  left: 40px !important;
+}
+.PhotoView-PhotoSlider__ArrowRight {
+  right: 40px !important;
+}
+.PhotoView-PhotoSlider__toolbarIcon {
+  position: absolute;
+  top: 94px;
+  right: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%
+}
