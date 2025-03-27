@@ -2,17 +2,24 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import { PhotoSlider } from 'react-photo-view';
 import 'react-photo-view/dist/index.css';
+import pic1 from './assets/pic1.jpg';
+import pic2 from './assets/pic2.jpg';
+import pic3 from './assets/pic3.jpg'
 
 function App() {
   const [previewImages, setPreviewImages] = useState<string[]>([]);
   const [previewIndex, setPreviewIndex] = useState<number>(0);
   const [visible, setVisible] = useState<boolean>(false);
+
   const images = [{
-    images: 'https://mur-report-test-1255655535.file.myqcloud.com/748p-rRbQMfcLQbfYJOn3xPzk-y68NSyIvt8K0pRpjXhJEn12nRFpxRsKv1fFgNdFu7LcYoKnGnxYEQJPEBKIPcVnCAOxG1GSGTDIJY0LQvvv9mqHxEs8B4iAW_225Oqgsqg1Y3iwQCm07izzTVQTc_AgK2zdw-PRjyjSb_eBUWbyUzU-P_WhOh_qkYVe5ssqwTNUa-seKztFeXzzDeqcKmAq3QLUJvstOzr60obIjdDfjb92-JbFVUnevqiDUTi6OTwBNsjeYFN7SFgjniyPrrjguOv4iNy6c0Lm1so7D04qTHF5sx-Tw5Ea40rtpP7gTgm1m45N6gocAhlxwtR9hzWcS3DV5J6DuVYLNolYIqdLf8JVfBL8gaijjYpWjUEMv6jYiX5iPrtW-PP-FU9evbs7OwAJpQJpuPGC4XLSzg=?sign=4bcf5642d1fdc27ec136b4e8054534f0&t=67e3c57b&imageMogr2/auto-orient',
+    images: pic1,
     id: 1001
   }, {
-    images: 'https://mur-report-test-1255655535.file.myqcloud.com/748p-rRbQMfcLQbfYJOn330Xrxc_6qcYU6S9CFf1g6xIaRseq9gXnzG34UUlW3vpWR4t69c5GuJcMHYn1k3vP2uapsDN8Iyphx3CVYK4Xo7BATcKs5vruitLmbl4oHRbqlAflvcVu9yPmdGTPgqMOKVmsdBKxLqhUHtV215tHSCTC0dAwm1V9gYEzYnaBW6_5tdnTevLitvG6-mdQ57wm2wPG3qYV8W7qN6wsQAJDND7t7M_YXiJ2N3UUxkHcF0U8v5tGe-qP562bKPOHFJmJ7_1gf_UxLZIXBKJVKY_LiV-8H4T680kmgUF8307chLVeTP776RfQPEg-RcHwae3l2iQanYSKM-wjeqsMMwy5Qd4MqGIIzFBXnYRgB7Pmv4ZDZ6MeJoVzLa8IGxVrIvW5qmmtbHiaT176A_VtPfdJxU=?sign=36e15ca7945ee31949673856ad16a011&t=67e3c8ba&imageMogr2/auto-orient',
+    images: pic2,
     id: 1002
+  },{
+    images: pic3,
+    id: 1003
   }];
 
   const handleImgClick = (item: string, index: number) => {
